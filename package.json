@@ -1,0 +1,18 @@
+{
+  "name": "boersen-briefing",
+  "version": "1.0.0",
+  "description": "Tägliches Börsen-Briefing per Telegram: Märkte, Dividenden-Ex- und Zahltage, Termine, Schlagzeilen.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "node src/index.js --dry-run",
+    "send": "node src/index.js --send"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "rss-parser": "^3.13.0",
+    "yahoo-finance2": "^4.0.2"
+  }
+}

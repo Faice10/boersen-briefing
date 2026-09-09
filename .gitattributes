@@ -1,0 +1,3 @@
+# Im Repo immer LF, damit die Shell-Schritte des Workflows auf dem
+# Ubuntu-Runner nicht ueber Windows-Zeilenenden stolpern.
+* text=auto eol=lf

@@ -1,0 +1,77 @@
+name: Börsen-Briefing
+
+on:
+  schedule:
+    # GitHub-Cron kennt nur UTC und keine Sommerzeit. Deshalb zwei Zeitpläne:
+    # 04:30 UTC trifft im Sommer 6:30 Berliner Zeit, 05:30 UTC im Winter.
+    # Das Skript bricht ab, wenn die Berliner Stunde nicht 6 ist, also läuft
+    # genau einer der beiden durch.
+    - cron: '30 4 * * 1-5'
+    - cron: '30 5 * * 1-5'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Nur testen, nichts senden'
+        type: boolean
+        default: false
+      refresh_all:
+        description: 'Dividenden-Cache komplett neu aufbauen'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: briefing
+  cancel-in-progress: false
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+
+      - run: npm ci
+
+      - name: Briefing senden
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          FMP_API_KEY: ${{ secrets.FMP_API_KEY }}
+        run: |
+          ARGS=""
+          # Manuelle Läufe überspringen die Stundenprüfung.
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            ARGS="$ARGS --force"
+          fi
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            ARGS="$ARGS --dry-run"
+          else
+            ARGS="$ARGS --send"
+          fi
+          if [ "${{ inputs.refresh_all }}" = "true" ]; then
+            ARGS="$ARGS --refresh-all"
+          fi
+          node src/index.js $ARGS
+
+      - name: Dividenden-Cache zurückschreiben
+        if: always()
+        run: |
+          # git diff sieht eine neu angelegte Datei nicht, deshalb git status.
+          if [ -z "$(git status --porcelain -- data/)" ]; then
+            echo "Cache unverändert, kein Commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git commit -m "Dividenden-Cache aktualisiert"
+          # Ein paralleler Lauf könnte inzwischen gepusht haben.
+          git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
+          git push
