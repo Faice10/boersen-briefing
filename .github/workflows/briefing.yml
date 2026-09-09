@@ -3,11 +3,13 @@ name: Börsen-Briefing
 on:
   schedule:
     # GitHub-Cron kennt nur UTC und keine Sommerzeit. Deshalb zwei Zeitpläne:
-    # 04:30 UTC trifft im Sommer 6:30 Berliner Zeit, 05:30 UTC im Winter.
-    # Das Skript bricht ab, wenn die Berliner Stunde nicht 6 ist, also läuft
-    # genau einer der beiden durch.
-    - cron: '30 4 * * 1-5'
-    - cron: '30 5 * * 1-5'
+    # 04:23 UTC trifft im Sommer 6:23 Berliner Zeit, 05:23 UTC im Winter.
+    # Das Skript sendet nur im Fenster ab 6 Uhr und höchstens einmal am Tag,
+    # also läuft genau einer der beiden durch — auch wenn GitHub sich verspätet.
+    # Die krumme Minute ist Absicht: zur vollen und halben Stunde ist der
+    # Andrang am größten und die Verzögerung entsprechend länger.
+    - cron: '23 4 * * 1-5'
+    - cron: '23 5 * * 1-5'
   workflow_dispatch:
     inputs:
       dry_run:

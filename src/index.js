@@ -7,7 +7,7 @@
 //   node src/index.js --refresh-all          kompletter Dividenden-Abgleich
 
 import 'dotenv/config';
-import { SEND_HOUR, TZ } from './config.js';
+import { shouldRun } from './schedule.js';
 import { isoDateInTZ, hourInTZ, weekdayInTZ } from './dates.js';
 import { getMarkets } from './sources/quotes.js';
 import { getDividends } from './sources/dividends.js';
@@ -15,6 +15,7 @@ import { getCalendar } from './sources/economics.js';
 import { getNews } from './sources/news.js';
 import { buildMessage } from './format.js';
 import { sendMessage } from './telegram.js';
+import { readState, markSent } from './state.js';
 
 const argv = process.argv.slice(2);
 const has = (flag) => argv.includes(flag);
@@ -50,11 +51,13 @@ async function main() {
   const now = new Date();
   const today = isoDateInTZ(now);
 
-  // Der Workflow startet zweimal (Sommer- und Winterzeit). Genau einer der
-  // beiden Laeufe trifft die Zielstunde, der andere bricht hier ab.
-  if (!force && hourInTZ(now) !== SEND_HOUR) {
-    log(`Abbruch: ${hourInTZ(now)} Uhr in ${TZ}, gesendet wird um ${SEND_HOUR} Uhr`);
-    return;
+  if (!force) {
+    const { lastSentDate } = await readState();
+    const verdict = shouldRun({ hour: hourInTZ(now), today, lastSentDate });
+    if (!verdict.ok) {
+      log(`Abbruch: ${verdict.reason}`);
+      return;
+    }
   }
 
   // Sonntags einmal alles neu einlesen, damit der Cache nicht ausduennt.
@@ -81,6 +84,7 @@ async function main() {
 
   if (send) {
     await sendMessage(message);
+    await markSent(today);
     log(`Gesendet (${message.length} Zeichen)`);
   } else {
     console.log(message);

@@ -2,10 +2,14 @@
 
 export const TZ = 'Europe/Berlin';
 
-// Stunde (Berliner Zeit), zu der das Briefing rausgehen soll.
-// Der GitHub-Workflow startet zweimal (Sommer-/Winterzeit), das Skript
-// bricht ab, wenn die Stunde nicht passt.
+// Stunde (Berliner Zeit), ab der das Briefing rausgehen darf.
 export const SEND_HOUR = 6;
+
+// GitHub haelt Cron-Zeiten nicht genau ein; Verzoegerungen von einer halben
+// Stunde und mehr kommen vor. Deshalb ein Fenster statt einer festen Stunde:
+// gesendet wird zwischen SEND_HOUR und SEND_HOUR + dieser Spanne. Dass daraus
+// nicht mehrere Nachrichten werden, verhindert die Tagessperre in state.json.
+export const SEND_WINDOW_HOURS = 5;
 
 // Abschnitt MAERKTE. Reihenfolge = Reihenfolge in der Nachricht.
 export const MARKETS = [

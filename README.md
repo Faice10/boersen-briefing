@@ -111,7 +111,22 @@ in `src/sources/`.
 
 ## Zeitsteuerung
 
+Das Briefing kommt **werktags**, Montag bis Freitag.
+
 GitHub-Cron kennt nur UTC und rechnet keine Sommerzeit. Deshalb startet der
-Workflow zweimal, um 04:30 und 05:30 UTC. Das Skript prüft die Berliner Stunde
-und bricht ab, wenn sie nicht passt — es läuft also immer genau einer der beiden
-durch, im Sommer wie im Winter. Manuelle Läufe umgehen die Prüfung mit `--force`.
+Workflow zweimal, um 04:23 und 05:23 UTC — im Sommer trifft der erste 6:23
+Berliner Zeit, im Winter der zweite.
+
+Welcher davon tatsächlich sendet, entscheidet [src/schedule.js](src/schedule.js):
+gesendet wird zwischen 6 und 11 Uhr Berliner Zeit und höchstens einmal am Tag.
+Das Fenster ist so breit, weil GitHub Cron-Zeiten regelmäßig um eine halbe
+Stunde und mehr verfehlt; bei einer festen Stunde würde ein verspäteter Lauf
+ersatzlos ausfallen. Dass daraus keine zwei Nachrichten werden, verhindert
+`data/state.json` — dort steht das Datum des letzten Versands, und der Workflow
+committet die Datei zusammen mit dem Cache zurück.
+
+Ein Restrisiko bleibt: schlägt der Push dieser Datei fehl, hält der zweite Lauf
+den Tag für offen und schickt das Briefing ein zweites Mal. Doppelt ist mir hier
+lieber als gar nicht.
+
+Manuelle Läufe über „Run workflow" umgehen beide Prüfungen mit `--force`.
