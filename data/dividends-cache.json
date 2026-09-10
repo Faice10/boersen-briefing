@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-09-10T05:52:28.053Z",
+  "updatedAt": "2026-09-10T18:54:33.514Z",
   "symbols": {
     "AIR.DE": {
       "symbol": "AIR.DE",
@@ -10,9 +10,9 @@
       "payDateEstimated": true,
       "amount": 3.2,
       "annualRate": 3.2,
-      "yield": 0.0159,
+      "yield": 0.0163,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:26.763Z"
+      "fetchedAt": "2026-09-10T18:54:31.880Z"
     },
     "ALV.DE": {
       "symbol": "ALV.DE",
@@ -22,9 +22,9 @@
       "payDateEstimated": true,
       "amount": 17.1,
       "annualRate": 17.1,
-      "yield": 0.038399998,
+      "yield": 0.039100002,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:26.760Z"
+      "fetchedAt": "2026-09-10T18:54:31.844Z"
     },
     "BAS.DE": {
       "symbol": "BAS.DE",
@@ -34,9 +34,9 @@
       "payDateEstimated": true,
       "amount": 2.25,
       "annualRate": 2.25,
-      "yield": 0.0419,
+      "yield": 0.0427,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:26.764Z"
+      "fetchedAt": "2026-09-10T18:54:32.032Z"
     },
     "ADS.DE": {
       "symbol": "ADS.DE",
@@ -46,9 +46,9 @@
       "payDateEstimated": true,
       "amount": 2.8,
       "annualRate": 2.8,
-      "yield": 0.0189,
+      "yield": 0.0191,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:26.762Z"
+      "fetchedAt": "2026-09-10T18:54:31.841Z"
     },
     "BNR.DE": {
       "symbol": "BNR.DE",
@@ -58,9 +58,9 @@
       "payDateEstimated": true,
       "amount": 1.9,
       "annualRate": 1.9,
-      "yield": 0.0307,
+      "yield": 0.0311,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:26.816Z"
+      "fetchedAt": "2026-09-10T18:54:31.947Z"
     },
     "BMW.DE": {
       "symbol": "BMW.DE",
@@ -70,9 +70,9 @@
       "payDateEstimated": true,
       "amount": 4.4,
       "annualRate": 4.4,
-      "yield": 0.0691,
+      "yield": 0.070199996,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:26.815Z"
+      "fetchedAt": "2026-09-10T18:54:31.933Z"
     },
     "BAYN.DE": {
       "symbol": "BAYN.DE",
@@ -84,7 +84,7 @@
       "annualRate": 0.11,
       "yield": 0.0022,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:26.849Z"
+      "fetchedAt": "2026-09-10T18:54:31.899Z"
     },
     "CBK.DE": {
       "symbol": "CBK.DE",
@@ -96,7 +96,7 @@
       "annualRate": 1.1,
       "yield": 0.025799999,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:26.860Z"
+      "fetchedAt": "2026-09-10T18:54:31.963Z"
     },
     "CON.DE": {
       "symbol": "CON.DE",
@@ -106,9 +106,9 @@
       "payDateEstimated": true,
       "amount": 2.7,
       "annualRate": 2.7,
-      "yield": 0.0379,
+      "yield": 0.0387,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:26.863Z"
+      "fetchedAt": "2026-09-10T18:54:32.021Z"
     },
     "1COV.DE": {
       "symbol": "1COV.DE",
@@ -130,9 +130,9 @@
       "payDateEstimated": true,
       "amount": 1.9,
       "annualRate": 1.9,
-      "yield": 0.0422,
+      "yield": 0.0433,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:26.865Z"
+      "fetchedAt": "2026-09-10T18:54:32.031Z"
     },
     "DBK.DE": {
       "symbol": "DBK.DE",
@@ -142,9 +142,9 @@
       "payDateEstimated": true,
       "amount": 1,
       "annualRate": 1,
-      "yield": 0.027999999,
+      "yield": 0.028499998,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:26.902Z"
+      "fetchedAt": "2026-09-10T18:54:32.016Z"
     },
     "DB1.DE": {
       "symbol": "DB1.DE",
@@ -154,9 +154,9 @@
       "payDateEstimated": true,
       "amount": 4.2,
       "annualRate": 4.2,
-      "yield": 0.015,
+      "yield": 0.0153,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:26.941Z"
+      "fetchedAt": "2026-09-10T18:54:32.081Z"
     },
     "DTE.DE": {
       "symbol": "DTE.DE",
@@ -166,9 +166,9 @@
       "payDateEstimated": true,
       "amount": 1,
       "annualRate": 1,
-      "yield": 0.0354,
+      "yield": 0.036,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:26.942Z"
+      "fetchedAt": "2026-09-10T18:54:32.095Z"
     },
     "DHL.DE": {
       "symbol": "DHL.DE",
@@ -178,9 +178,9 @@
       "payDateEstimated": true,
       "amount": 1.9,
       "annualRate": 1.9,
-      "yield": 0.0345,
+      "yield": 0.0349,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:26.948Z"
+      "fetchedAt": "2026-09-10T18:54:32.070Z"
     },
     "EOAN.DE": {
       "symbol": "EOAN.DE",
@@ -190,9 +190,9 @@
       "payDateEstimated": true,
       "amount": 0.57,
       "annualRate": 0.57,
-      "yield": 0.0323,
+      "yield": 0.0324,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:26.956Z"
+      "fetchedAt": "2026-09-10T18:54:32.096Z"
     },
     "FRE.DE": {
       "symbol": "FRE.DE",
@@ -202,9 +202,9 @@
       "payDateEstimated": true,
       "amount": 1.05,
       "annualRate": 1.05,
-      "yield": 0.0235,
+      "yield": 0.023699999,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:26.957Z"
+      "fetchedAt": "2026-09-10T18:54:32.152Z"
     },
     "HNR1.DE": {
       "symbol": "HNR1.DE",
@@ -214,9 +214,9 @@
       "payDateEstimated": true,
       "amount": 12.5,
       "annualRate": 12.5,
-      "yield": 0.0505,
+      "yield": 0.0509,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:26.994Z"
+      "fetchedAt": "2026-09-10T18:54:32.138Z"
     },
     "HEI.DE": {
       "symbol": "HEI.DE",
@@ -226,9 +226,9 @@
       "payDateEstimated": true,
       "amount": 3.6,
       "annualRate": 3.6,
-      "yield": 0.0222,
+      "yield": 0.0229,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:26.998Z"
+      "fetchedAt": "2026-09-10T18:54:32.192Z"
     },
     "HEN3.DE": {
       "symbol": "HEN3.DE",
@@ -238,9 +238,9 @@
       "payDateEstimated": true,
       "amount": 2.07,
       "annualRate": 2.07,
-      "yield": 0.0273,
+      "yield": 0.0279,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:27.037Z"
+      "fetchedAt": "2026-09-10T18:54:32.162Z"
     },
     "IFX.DE": {
       "symbol": "IFX.DE",
@@ -250,9 +250,9 @@
       "payDateEstimated": true,
       "amount": 0.35,
       "annualRate": 0.35,
-      "yield": 0.006,
+      "yield": 0.0061000003,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:27.038Z"
+      "fetchedAt": "2026-09-10T18:54:32.203Z"
     },
     "MBG.DE": {
       "symbol": "MBG.DE",
@@ -262,9 +262,9 @@
       "payDateEstimated": true,
       "amount": 3.5,
       "annualRate": 3.5,
-      "yield": 0.0733,
+      "yield": 0.075,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:27.042Z"
+      "fetchedAt": "2026-09-10T18:54:32.232Z"
     },
     "MRK.DE": {
       "symbol": "MRK.DE",
@@ -274,9 +274,9 @@
       "payDateEstimated": true,
       "amount": 2.2,
       "annualRate": 2.2,
-      "yield": 0.0163,
+      "yield": 0.0166,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:27.050Z"
+      "fetchedAt": "2026-09-10T18:54:32.233Z"
     },
     "PAH3.DE": {
       "symbol": "PAH3.DE",
@@ -286,9 +286,9 @@
       "payDateEstimated": true,
       "amount": 1.51,
       "annualRate": 1.51,
-      "yield": 0.0514,
+      "yield": 0.051799998,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:27.148Z"
+      "fetchedAt": "2026-09-10T18:54:32.284Z"
     },
     "MTX.DE": {
       "symbol": "MTX.DE",
@@ -298,9 +298,9 @@
       "payDateEstimated": true,
       "amount": 3.6,
       "annualRate": 3.6,
-      "yield": 0.0101,
+      "yield": 0.0105,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:27.085Z"
+      "fetchedAt": "2026-09-10T18:54:32.253Z"
     },
     "MUV2.DE": {
       "symbol": "MUV2.DE",
@@ -310,9 +310,9 @@
       "payDateEstimated": true,
       "amount": 24,
       "annualRate": 24,
-      "yield": 0.0478,
+      "yield": 0.0484,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:27.090Z"
+      "fetchedAt": "2026-09-10T18:54:32.270Z"
     },
     "QIA.DE": {
       "symbol": "QIA.DE",
@@ -324,7 +324,7 @@
       "annualRate": 0.31,
       "yield": 0.0084,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:27.135Z"
+      "fetchedAt": "2026-09-10T18:54:32.308Z"
     },
     "RHM.DE": {
       "symbol": "RHM.DE",
@@ -334,9 +334,9 @@
       "payDateEstimated": true,
       "amount": 11.5,
       "annualRate": 11.5,
-      "yield": 0.0109,
+      "yield": 0.0114,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:27.144Z"
+      "fetchedAt": "2026-09-10T18:54:32.338Z"
     },
     "SAP.DE": {
       "symbol": "SAP.DE",
@@ -346,9 +346,9 @@
       "payDateEstimated": true,
       "amount": 2.5,
       "annualRate": 2.5,
-      "yield": 0.0138,
+      "yield": 0.0137,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:27.184Z"
+      "fetchedAt": "2026-09-10T18:54:32.387Z"
     },
     "SIE.DE": {
       "symbol": "SIE.DE",
@@ -358,9 +358,9 @@
       "payDateEstimated": true,
       "amount": 5.35,
       "annualRate": 5.35,
-      "yield": 0.0196,
+      "yield": 0.0202,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:27.189Z"
+      "fetchedAt": "2026-09-10T18:54:32.427Z"
     },
     "SRT3.DE": {
       "symbol": "SRT3.DE",
@@ -372,7 +372,7 @@
       "annualRate": 0.74,
       "yield": 0.0031,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:27.193Z"
+      "fetchedAt": "2026-09-10T18:54:32.404Z"
     },
     "ENR.DE": {
       "symbol": "ENR.DE",
@@ -382,9 +382,9 @@
       "payDateEstimated": true,
       "amount": 0.7,
       "annualRate": 0.7,
-      "yield": 0.0047,
+      "yield": 0.0047999998,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:27.199Z"
+      "fetchedAt": "2026-09-10T18:54:32.407Z"
     },
     "SY1.DE": {
       "symbol": "SY1.DE",
@@ -394,9 +394,9 @@
       "payDateEstimated": true,
       "amount": 1.25,
       "annualRate": 1.25,
-      "yield": 0.0138,
+      "yield": 0.014099999,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:27.241Z"
+      "fetchedAt": "2026-09-10T18:54:32.452Z"
     },
     "SHL.DE": {
       "symbol": "SHL.DE",
@@ -406,9 +406,9 @@
       "payDateEstimated": true,
       "amount": 1,
       "annualRate": 1,
-      "yield": 0.0256,
+      "yield": 0.025799999,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:27.273Z"
+      "fetchedAt": "2026-09-10T18:54:32.447Z"
     },
     "VNA.DE": {
       "symbol": "VNA.DE",
@@ -418,9 +418,9 @@
       "payDateEstimated": true,
       "amount": 1.25,
       "annualRate": 1.25,
-      "yield": 0.066599995,
+      "yield": 0.0675,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:27.251Z"
+      "fetchedAt": "2026-09-10T18:54:32.495Z"
     },
     "VOW3.DE": {
       "symbol": "VOW3.DE",
@@ -430,9 +430,9 @@
       "payDateEstimated": true,
       "amount": 5.26,
       "annualRate": 5.26,
-      "yield": 0.0633,
+      "yield": 0.0644,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:27.242Z"
+      "fetchedAt": "2026-09-10T18:54:32.489Z"
     },
     "ZAL.DE": {
       "symbol": "ZAL.DE",
@@ -454,9 +454,9 @@
       "payDateEstimated": true,
       "amount": 1.88,
       "annualRate": 7.78,
-      "yield": 0.0050999997,
+      "yield": 0.0052,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:27.295Z"
+      "fetchedAt": "2026-09-10T18:54:32.503Z"
     },
     "MC.PA": {
       "symbol": "MC.PA",
@@ -478,9 +478,9 @@
       "payDateEstimated": true,
       "amount": 7.2,
       "annualRate": 7.2,
-      "yield": 0.0185,
+      "yield": 0.0189,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:27.291Z"
+      "fetchedAt": "2026-09-10T18:54:32.513Z"
     },
     "SAN.PA": {
       "symbol": "SAN.PA",
@@ -490,9 +490,9 @@
       "payDateEstimated": true,
       "amount": 4.12,
       "annualRate": 4.12,
-      "yield": 0.0552,
+      "yield": 0.0555,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:27.297Z"
+      "fetchedAt": "2026-09-10T18:54:32.556Z"
     },
     "TTE.PA": {
       "symbol": "TTE.PA",
@@ -514,9 +514,9 @@
       "payDateEstimated": true,
       "amount": 3.363636,
       "annualRate": 3.36,
-      "yield": 0.0194,
+      "yield": 0.02,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:27.324Z"
+      "fetchedAt": "2026-09-10T18:54:32.559Z"
     },
     "SU.PA": {
       "symbol": "SU.PA",
@@ -526,9 +526,9 @@
       "payDateEstimated": true,
       "amount": 4.2,
       "annualRate": 4.2,
-      "yield": 0.0139999995,
+      "yield": 0.0145000005,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:27.348Z"
+      "fetchedAt": "2026-09-10T18:54:32.566Z"
     },
     "CS.PA": {
       "symbol": "CS.PA",
@@ -538,9 +538,9 @@
       "payDateEstimated": true,
       "amount": 2.32,
       "annualRate": 2.32,
-      "yield": 0.0531,
+      "yield": 0.054,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:27.352Z"
+      "fetchedAt": "2026-09-10T18:54:32.564Z"
     },
     "BNP.PA": {
       "symbol": "BNP.PA",
@@ -562,9 +562,9 @@
       "payDateEstimated": true,
       "amount": 13,
       "annualRate": 18,
-      "yield": 0.0125,
+      "yield": 0.0128,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:27.379Z"
+      "fetchedAt": "2026-09-10T18:54:32.619Z"
     },
     "EL.PA": {
       "symbol": "EL.PA",
@@ -574,9 +574,9 @@
       "payDateEstimated": true,
       "amount": 4,
       "annualRate": 4,
-      "yield": 0.026700001,
+      "yield": 0.026800001,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:27.371Z"
+      "fetchedAt": "2026-09-10T18:54:32.623Z"
     },
     "SAF.PA": {
       "symbol": "SAF.PA",
@@ -586,9 +586,9 @@
       "payDateEstimated": true,
       "amount": 3.35,
       "annualRate": 3.35,
-      "yield": 0.01,
+      "yield": 0.0104,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:27.398Z"
+      "fetchedAt": "2026-09-10T18:54:32.662Z"
     },
     "DG.PA": {
       "symbol": "DG.PA",
@@ -610,9 +610,9 @@
       "payDateEstimated": true,
       "amount": 2.25,
       "annualRate": 2.25,
-      "yield": 0.0347,
+      "yield": 0.0357,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:27.410Z"
+      "fetchedAt": "2026-09-10T18:54:32.628Z"
     },
     "KER.PA": {
       "symbol": "KER.PA",
@@ -622,9 +622,9 @@
       "payDateEstimated": true,
       "amount": 2.75,
       "annualRate": 3,
-      "yield": 0.0123000005,
+      "yield": 0.0128999995,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:27.417Z"
+      "fetchedAt": "2026-09-10T18:54:32.686Z"
     },
     "ISP.MI": {
       "symbol": "ISP.MI",
@@ -636,7 +636,7 @@
       "annualRate": 0.38,
       "yield": 0.056799997,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:27.460Z"
+      "fetchedAt": "2026-09-10T18:54:32.691Z"
     },
     "ENI.MI": {
       "symbol": "ENI.MI",
@@ -658,9 +658,9 @@
       "payDateEstimated": true,
       "amount": 1.35,
       "annualRate": 1.35,
-      "yield": 0.055999998,
+      "yield": 0.0561,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:27.431Z"
+      "fetchedAt": "2026-09-10T18:54:32.668Z"
     },
     "ENEL.MI": {
       "symbol": "ENEL.MI",
@@ -670,9 +670,9 @@
       "payDateEstimated": true,
       "amount": 0.26,
       "annualRate": 0.52,
-      "yield": 0.0581,
+      "yield": 0.0585,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:27.489Z"
+      "fetchedAt": "2026-09-10T18:54:32.715Z"
     },
     "UCG.MI": {
       "symbol": "UCG.MI",
@@ -682,9 +682,9 @@
       "payDateEstimated": true,
       "amount": 1.7208,
       "annualRate": 3.15,
-      "yield": 0.0373,
+      "yield": 0.0374,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:27.538Z"
+      "fetchedAt": "2026-09-10T18:54:32.729Z"
     },
     "G.MI": {
       "symbol": "G.MI",
@@ -696,7 +696,7 @@
       "annualRate": 1.64,
       "yield": 0.0369,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:27.478Z"
+      "fetchedAt": "2026-09-10T18:54:32.779Z"
     },
     "STLAM.MI": {
       "symbol": "STLAM.MI",
@@ -708,7 +708,7 @@
       "annualRate": null,
       "yield": null,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:27.508Z"
+      "fetchedAt": "2026-09-10T18:54:32.743Z"
     },
     "SAN.MC": {
       "symbol": "SAN.MC",
@@ -718,9 +718,9 @@
       "payDateEstimated": true,
       "amount": 0.125,
       "annualRate": 0.25,
-      "yield": 0.019299999,
+      "yield": 0.0197,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:27.527Z"
+      "fetchedAt": "2026-09-10T18:54:32.768Z"
     },
     "IBE.MC": {
       "symbol": "IBE.MC",
@@ -730,9 +730,9 @@
       "payDateEstimated": true,
       "amount": 0.427,
       "annualRate": 0.68,
-      "yield": 0.0342,
+      "yield": 0.0341,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:27.537Z"
+      "fetchedAt": "2026-09-10T18:54:32.791Z"
     },
     "ITX.MC": {
       "symbol": "ITX.MC",
@@ -754,9 +754,9 @@
       "payDateEstimated": true,
       "amount": 0.6,
       "annualRate": 0.92,
-      "yield": 0.0363,
+      "yield": 0.0367,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:27.588Z"
+      "fetchedAt": "2026-09-10T18:54:32.796Z"
     },
     "TEF.MC": {
       "symbol": "TEF.MC",
@@ -766,9 +766,9 @@
       "payDateEstimated": true,
       "amount": 0.15,
       "annualRate": 0.15,
-      "yield": 0.0414,
+      "yield": 0.042,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:27.576Z"
+      "fetchedAt": "2026-09-10T18:54:32.872Z"
     },
     "INGA.AS": {
       "symbol": "INGA.AS",
@@ -778,9 +778,9 @@
       "payDateEstimated": true,
       "amount": 0.4,
       "annualRate": 1.14,
-      "yield": 0.0352,
+      "yield": 0.0359,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:27.584Z"
+      "fetchedAt": "2026-09-10T18:54:32.822Z"
     },
     "ADYEN.AS": {
       "symbol": "ADYEN.AS",
@@ -814,9 +814,9 @@
       "payDateEstimated": true,
       "amount": 0.51,
       "annualRate": 1.24,
-      "yield": 0.0397,
+      "yield": 0.0401,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:27.589Z"
+      "fetchedAt": "2026-09-10T18:54:32.872Z"
     },
     "WKL.AS": {
       "symbol": "WKL.AS",
@@ -826,9 +826,9 @@
       "payDateEstimated": true,
       "amount": 1.01,
       "annualRate": 2.6,
-      "yield": 0.0387,
+      "yield": 0.038900003,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:27.646Z"
+      "fetchedAt": "2026-09-10T18:54:32.858Z"
     },
     "PHIA.AS": {
       "symbol": "PHIA.AS",
@@ -838,9 +838,9 @@
       "payDateEstimated": true,
       "amount": 0.85,
       "annualRate": 0.85,
-      "yield": 0.038900003,
+      "yield": 0.0392,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:27.638Z"
+      "fetchedAt": "2026-09-10T18:54:32.878Z"
     },
     "ABI.BR": {
       "symbol": "ABI.BR",
@@ -850,9 +850,9 @@
       "payDateEstimated": true,
       "amount": 1,
       "annualRate": 1.15,
-      "yield": 0.0167,
+      "yield": 0.0171,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:27.634Z"
+      "fetchedAt": "2026-09-10T18:54:32.920Z"
     },
     "KBC.BR": {
       "symbol": "KBC.BR",
@@ -874,9 +874,9 @@
       "payDateEstimated": true,
       "amount": 0.04,
       "annualRate": 0.14,
-      "yield": 0.0152,
+      "yield": 0.0149,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:27.638Z"
+      "fetchedAt": "2026-09-10T18:54:32.971Z"
     },
     "FLTR.L": {
       "symbol": "FLTR.L",
@@ -888,7 +888,7 @@
       "annualRate": null,
       "yield": null,
       "currency": "GBp",
-      "fetchedAt": "2026-09-10T05:52:27.695Z"
+      "fetchedAt": "2026-09-10T18:54:32.943Z"
     },
     "NDA-FI.HE": {
       "symbol": "NDA-FI.HE",
@@ -900,7 +900,7 @@
       "annualRate": 1.3,
       "yield": 0.0731,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:27.688Z"
+      "fetchedAt": "2026-09-10T18:54:32.924Z"
     },
     "AAPL": {
       "symbol": "AAPL",
@@ -912,7 +912,7 @@
       "annualRate": 1.08,
       "yield": 0.0034,
       "currency": "USD",
-      "fetchedAt": "2026-09-10T05:52:27.687Z"
+      "fetchedAt": "2026-09-10T18:54:32.995Z"
     },
     "AMGN": {
       "symbol": "AMGN",
@@ -922,9 +922,9 @@
       "payDateEstimated": false,
       "amount": 2.52,
       "annualRate": 10.08,
-      "yield": 0.0256,
+      "yield": 0.025799999,
       "currency": "USD",
-      "fetchedAt": "2026-09-10T05:52:27.693Z"
+      "fetchedAt": "2026-09-10T18:54:32.994Z"
     },
     "AXP": {
       "symbol": "AXP",
@@ -934,9 +934,9 @@
       "payDateEstimated": false,
       "amount": 0.95,
       "annualRate": 3.8,
-      "yield": 0.0117,
+      "yield": 0.0117999995,
       "currency": "USD",
-      "fetchedAt": "2026-09-10T05:52:27.743Z"
+      "fetchedAt": "2026-09-10T18:54:33.012Z"
     },
     "CAT": {
       "symbol": "CAT",
@@ -946,9 +946,9 @@
       "payDateEstimated": false,
       "amount": 1.63,
       "annualRate": 6.52,
-      "yield": 0.007900001,
+      "yield": 0.008,
       "currency": "USD",
-      "fetchedAt": "2026-09-10T05:52:27.738Z"
+      "fetchedAt": "2026-09-10T18:54:33.060Z"
     },
     "BA": {
       "symbol": "BA",
@@ -960,7 +960,7 @@
       "annualRate": null,
       "yield": null,
       "currency": "USD",
-      "fetchedAt": "2026-09-10T05:52:27.739Z"
+      "fetchedAt": "2026-09-10T18:54:33.037Z"
     },
     "CRM": {
       "symbol": "CRM",
@@ -996,7 +996,7 @@
       "annualRate": 7.12,
       "yield": 0.0339,
       "currency": "USD",
-      "fetchedAt": "2026-09-10T05:52:27.744Z"
+      "fetchedAt": "2026-09-10T18:54:33.114Z"
     },
     "DIS": {
       "symbol": "DIS",
@@ -1006,9 +1006,9 @@
       "payDateEstimated": false,
       "amount": 0.75,
       "annualRate": 1.5,
-      "yield": 0.0143,
+      "yield": 0.014400001,
       "currency": "USD",
-      "fetchedAt": "2026-09-10T05:52:27.787Z"
+      "fetchedAt": "2026-09-10T18:54:33.091Z"
     },
     "DOW": {
       "symbol": "DOW",
@@ -1018,9 +1018,9 @@
       "payDateEstimated": false,
       "amount": 0.35,
       "annualRate": 1.4,
-      "yield": 0.0473,
+      "yield": 0.0476,
       "currency": "USD",
-      "fetchedAt": "2026-09-10T05:52:27.792Z"
+      "fetchedAt": "2026-09-10T18:54:33.090Z"
     },
     "HON": {
       "symbol": "HON",
@@ -1030,9 +1030,9 @@
       "payDateEstimated": false,
       "amount": 0.7,
       "annualRate": 2.8,
-      "yield": 0.0134000005,
+      "yield": 0.0137,
       "currency": "USD",
-      "fetchedAt": "2026-09-10T05:52:27.838Z"
+      "fetchedAt": "2026-09-10T18:54:33.167Z"
     },
     "GS": {
       "symbol": "GS",
@@ -1042,9 +1042,9 @@
       "payDateEstimated": false,
       "amount": 5,
       "annualRate": 20,
-      "yield": 0.019299999,
+      "yield": 0.0194,
       "currency": "USD",
-      "fetchedAt": "2026-09-10T05:52:27.791Z"
+      "fetchedAt": "2026-09-10T18:54:33.125Z"
     },
     "HD": {
       "symbol": "HD",
@@ -1056,7 +1056,7 @@
       "annualRate": 9.32,
       "yield": 0.0297,
       "currency": "USD",
-      "fetchedAt": "2026-09-10T05:52:27.801Z"
+      "fetchedAt": "2026-09-10T18:54:33.138Z"
     },
     "IBM": {
       "symbol": "IBM",
@@ -1066,9 +1066,9 @@
       "payDateEstimated": false,
       "amount": 1.69,
       "annualRate": 6.76,
-      "yield": 0.0291,
+      "yield": 0.028199999,
       "currency": "USD",
-      "fetchedAt": "2026-09-10T05:52:27.840Z"
+      "fetchedAt": "2026-09-10T18:54:33.263Z"
     },
     "INTC": {
       "symbol": "INTC",
@@ -1080,7 +1080,7 @@
       "annualRate": null,
       "yield": null,
       "currency": "USD",
-      "fetchedAt": "2026-09-10T05:52:27.844Z"
+      "fetchedAt": "2026-09-10T18:54:33.175Z"
     },
     "JNJ": {
       "symbol": "JNJ",
@@ -1090,9 +1090,9 @@
       "payDateEstimated": false,
       "amount": 1.34,
       "annualRate": 5.36,
-      "yield": 0.0199,
+      "yield": 0.0201,
       "currency": "USD",
-      "fetchedAt": "2026-09-10T05:52:27.854Z"
+      "fetchedAt": "2026-09-10T18:54:33.200Z"
     },
     "JPM": {
       "symbol": "JPM",
@@ -1102,9 +1102,9 @@
       "payDateEstimated": false,
       "amount": 1.5,
       "annualRate": 6,
-      "yield": 0.017,
+      "yield": 0.016900001,
       "currency": "USD",
-      "fetchedAt": "2026-09-10T05:52:27.897Z"
+      "fetchedAt": "2026-09-10T18:54:33.226Z"
     },
     "KO": {
       "symbol": "KO",
@@ -1126,9 +1126,9 @@
       "payDateEstimated": false,
       "amount": 1.86,
       "annualRate": 7.44,
-      "yield": 0.0291,
+      "yield": 0.0294,
       "currency": "USD",
-      "fetchedAt": "2026-09-10T05:52:27.893Z"
+      "fetchedAt": "2026-09-10T18:54:33.240Z"
     },
     "MRK": {
       "symbol": "MRK",
@@ -1150,9 +1150,9 @@
       "payDateEstimated": false,
       "amount": 0.78,
       "annualRate": 3.12,
-      "yield": 0.0186,
+      "yield": 0.019,
       "currency": "USD",
-      "fetchedAt": "2026-09-10T05:52:27.893Z"
+      "fetchedAt": "2026-09-10T18:54:33.263Z"
     },
     "MSFT": {
       "symbol": "MSFT",
@@ -1164,7 +1164,7 @@
       "annualRate": 3.64,
       "yield": 0.0074,
       "currency": "USD",
-      "fetchedAt": "2026-09-10T05:52:27.906Z"
+      "fetchedAt": "2026-09-10T18:54:33.273Z"
     },
     "PG": {
       "symbol": "PG",
@@ -1174,9 +1174,9 @@
       "payDateEstimated": false,
       "amount": 1.089,
       "annualRate": 4.35,
-      "yield": 0.0299,
+      "yield": 0.0305,
       "currency": "USD",
-      "fetchedAt": "2026-09-10T05:52:27.942Z"
+      "fetchedAt": "2026-09-10T18:54:33.344Z"
     },
     "NKE": {
       "symbol": "NKE",
@@ -1186,9 +1186,9 @@
       "payDateEstimated": false,
       "amount": 0.41,
       "annualRate": 1.64,
-      "yield": 0.043,
+      "yield": 0.043899998,
       "currency": "USD",
-      "fetchedAt": "2026-09-10T05:52:27.966Z"
+      "fetchedAt": "2026-09-10T18:54:33.406Z"
     },
     "TRV": {
       "symbol": "TRV",
@@ -1210,9 +1210,9 @@
       "payDateEstimated": false,
       "amount": 0.8,
       "annualRate": 3.2,
-      "yield": 0.0098,
+      "yield": 0.01,
       "currency": "USD",
-      "fetchedAt": "2026-09-10T05:52:27.950Z"
+      "fetchedAt": "2026-09-10T18:54:33.324Z"
     },
     "UNH": {
       "symbol": "UNH",
@@ -1236,7 +1236,7 @@
       "annualRate": 2.68,
       "yield": 0.0073,
       "currency": "USD",
-      "fetchedAt": "2026-09-10T05:52:28.052Z"
+      "fetchedAt": "2026-09-10T18:54:33.513Z"
     },
     "VZ": {
       "symbol": "VZ",
@@ -1270,9 +1270,9 @@
       "payDateEstimated": true,
       "amount": 1,
       "annualRate": 1,
-      "yield": 0.013099999,
+      "yield": 0.0134000005,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:26.812Z"
+      "fetchedAt": "2026-09-10T18:54:31.888Z"
     },
     "P911.DE": {
       "symbol": "P911.DE",
@@ -1284,7 +1284,7 @@
       "annualRate": 1.01,
       "yield": 0.0225,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:27.090Z"
+      "fetchedAt": "2026-09-10T18:54:32.300Z"
     },
     "RWE.DE": {
       "symbol": "RWE.DE",
@@ -1294,9 +1294,9 @@
       "payDateEstimated": true,
       "amount": 1.2,
       "annualRate": 1.2,
-      "yield": 0.0202,
+      "yield": 0.0199,
       "currency": "EUR",
-      "fetchedAt": "2026-09-10T05:52:27.142Z"
+      "fetchedAt": "2026-09-10T18:54:32.344Z"
     }
   }
 }
