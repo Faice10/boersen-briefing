@@ -111,22 +111,32 @@ in `src/sources/`.
 
 ## Zeitsteuerung
 
-Das Briefing kommt **werktags**, Montag bis Freitag.
+Das Briefing kommt **werktags**, Montag bis Freitag, morgens zwischen 6 und
+etwa 9 Uhr. Eine feste Minute gibt es nicht, und das hat einen Grund.
 
-GitHub-Cron kennt nur UTC und rechnet keine Sommerzeit. Deshalb startet der
-Workflow zweimal, um 04:23 und 05:23 UTC — im Sommer trifft der erste 6:23
-Berliner Zeit, im Winter der zweite.
+GitHub hält Cron-Zeiten nicht zuverlässig ein: Läufe kommen verspätet, und
+einzelne fallen ersatzlos aus. Beim ersten Zeitplan-Lauf dieses Repos ist genau
+das passiert — beide Cron-Zeiten wurden übersprungen, obwohl Syntax, Branch und
+Berechtigungen stimmten.
 
-Welcher davon tatsächlich sendet, entscheidet [src/schedule.js](src/schedule.js):
-gesendet wird zwischen 6 und 11 Uhr Berliner Zeit und höchstens einmal am Tag.
-Das Fenster ist so breit, weil GitHub Cron-Zeiten regelmäßig um eine halbe
-Stunde und mehr verfehlt; bei einer festen Stunde würde ein verspäteter Lauf
-ersatzlos ausfallen. Dass daraus keine zwei Nachrichten werden, verhindert
-`data/state.json` — dort steht das Datum des letzten Versands, und der Workflow
-committet die Datei zusammen mit dem Cache zurück.
+Deshalb ist der Ablauf auf Wiederholung ausgelegt statt auf Pünktlichkeit:
 
-Ein Restrisiko bleibt: schlägt der Push dieser Datei fehl, hält der zweite Lauf
-den Tag für offen und schickt das Briefing ein zweites Mal. Doppelt ist mir hier
-lieber als gar nicht.
+- Der Workflow startet **siebenmal** über den Morgen verteilt (siehe die
+  `cron`-Einträge in [briefing.yml](.github/workflows/briefing.yml)).
+- Gesendet wird nur im Fenster zwischen 6 und 11 Uhr Berliner Zeit, entschieden
+  in [src/schedule.js](src/schedule.js).
+- Der erste Lauf, der es in das Fenster schafft, sendet und schreibt das Datum
+  nach `data/state.json`. Alle weiteren Läufe des Tages sehen das und steigen
+  sofort wieder aus.
 
-Manuelle Läufe über „Run workflow" umgehen beide Prüfungen mit `--force`.
+Damit die überzähligen Läufe kaum Rechenzeit kosten, entscheidet
+[scripts/gate.js](scripts/gate.js) direkt nach dem Checkout — vor `npm ci`.
+Ein übersprungener Lauf ist nach wenigen Sekunden vorbei.
+
+Zwei Cron-Zeiten decken den Sommer mit ab (04:23 und 04:53 UTC sind im Winter
+noch zu früh), der Rest greift ganzjährig. Manuelle Läufe über „Run workflow"
+umgehen Fenster und Tagessperre mit `--force`.
+
+Ein Restrisiko bleibt: schlägt der Push von `state.json` fehl, hält der nächste
+Lauf den Tag für offen und schickt das Briefing ein zweites Mal. Doppelt ist mir
+hier lieber als gar nicht.

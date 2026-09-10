@@ -2,14 +2,22 @@ name: Börsen-Briefing
 
 on:
   schedule:
-    # GitHub-Cron kennt nur UTC und keine Sommerzeit. Deshalb zwei Zeitpläne:
-    # 04:23 UTC trifft im Sommer 6:23 Berliner Zeit, 05:23 UTC im Winter.
-    # Das Skript sendet nur im Fenster ab 6 Uhr und höchstens einmal am Tag,
-    # also läuft genau einer der beiden durch — auch wenn GitHub sich verspätet.
+    # GitHub verzögert geplante Läufe regelmäßig und lässt einzelne ganz aus.
+    # Deshalb wird mehrfach gestartet statt einmal: der erste Lauf, der es in
+    # das Zeitfenster schafft, sendet — alle weiteren steigen sofort wieder
+    # aus, weil in data/state.json steht, dass der Tag erledigt ist.
+    #
+    # Zeiten in UTC. Im Sommer sind das 06:23 bis 09:23 Berliner Zeit, im
+    # Winter 05:23 bis 08:23; gesendet wird im Fenster ab 6 Uhr (src/config.js).
     # Die krumme Minute ist Absicht: zur vollen und halben Stunde ist der
     # Andrang am größten und die Verzögerung entsprechend länger.
     - cron: '23 4 * * 1-5'
+    - cron: '53 4 * * 1-5'
     - cron: '23 5 * * 1-5'
+    - cron: '53 5 * * 1-5'
+    - cron: '23 6 * * 1-5'
+    - cron: '53 6 * * 1-5'
+    - cron: '23 7 * * 1-5'
   workflow_dispatch:
     inputs:
       dry_run:
@@ -34,21 +42,29 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
+      # Kostet ein paar Sekunden und spart den Rest, wenn heute schon
+      # gesendet wurde. Läuft mit dem Node des Runners, ohne npm ci.
+      - id: gate
+        run: node scripts/gate.js
+
       - uses: actions/setup-node@v7
+        if: steps.gate.outputs.run == 'true'
         with:
           node-version: '24'
           cache: npm
 
       - run: npm ci
+        if: steps.gate.outputs.run == 'true'
 
       - name: Briefing senden
+        if: steps.gate.outputs.run == 'true'
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           FMP_API_KEY: ${{ secrets.FMP_API_KEY }}
         run: |
           ARGS=""
-          # Manuelle Läufe überspringen die Stundenprüfung.
+          # Manuelle Läufe überspringen Zeitfenster und Tagessperre.
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             ARGS="$ARGS --force"
           fi
@@ -62,12 +78,12 @@ jobs:
           fi
           node src/index.js $ARGS
 
-      - name: Dividenden-Cache zurückschreiben
-        if: always()
+      - name: Dividenden-Cache und Sendedatum zurückschreiben
+        if: always() && steps.gate.outputs.run == 'true'
         run: |
           # git diff sieht eine neu angelegte Datei nicht, deshalb git status.
           if [ -z "$(git status --porcelain -- data/)" ]; then
-            echo "Cache unverändert, kein Commit."
+            echo "Nichts verändert, kein Commit."
             exit 0
           fi
           git config user.name "github-actions[bot]"
