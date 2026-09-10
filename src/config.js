@@ -3,7 +3,7 @@
 export const TZ = 'Europe/Berlin';
 
 // Stunde (Berliner Zeit), ab der das Briefing rausgehen darf.
-export const SEND_HOUR = 6;
+export const SEND_HOUR = 5;
 
 // GitHub haelt Cron-Zeiten nicht genau ein; Verzoegerungen von einer halben
 // Stunde und mehr kommen vor. Deshalb ein Fenster statt einer festen Stunde:

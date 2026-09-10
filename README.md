@@ -111,8 +111,8 @@ in `src/sources/`.
 
 ## Zeitsteuerung
 
-Das Briefing kommt **werktags**, Montag bis Freitag, morgens zwischen 6 und
-etwa 9 Uhr. Eine feste Minute gibt es nicht, und das hat einen Grund.
+Das Briefing kommt **werktags**, Montag bis Freitag, morgens ab etwa 5:30 Uhr.
+Eine feste Minute gibt es nicht, und das hat einen Grund.
 
 GitHub hält Cron-Zeiten nicht zuverlässig ein: Läufe kommen verspätet, und
 einzelne fallen ersatzlos aus. Beim ersten Zeitplan-Lauf dieses Repos ist genau
@@ -123,8 +123,10 @@ Deshalb ist der Ablauf auf Wiederholung ausgelegt statt auf Pünktlichkeit:
 
 - Der Workflow startet **siebenmal** über den Morgen verteilt (siehe die
   `cron`-Einträge in [briefing.yml](.github/workflows/briefing.yml)).
-- Gesendet wird nur im Fenster zwischen 6 und 11 Uhr Berliner Zeit, entschieden
-  in [src/schedule.js](src/schedule.js).
+- Gesendet wird nur im Fenster zwischen 5 und 10 Uhr Berliner Zeit, entschieden
+  in [src/schedule.js](src/schedule.js). Die Grenze steht als `SEND_HOUR` in
+  [src/config.js](src/config.js) — wer sie verschiebt, muss die `cron`-Zeiten
+  mitziehen.
 - Der erste Lauf, der es in das Fenster schafft, sendet und schreibt das Datum
   nach `data/state.json`. Alle weiteren Läufe des Tages sehen das und steigen
   sofort wieder aus.
@@ -133,7 +135,7 @@ Damit die überzähligen Läufe kaum Rechenzeit kosten, entscheidet
 [scripts/gate.js](scripts/gate.js) direkt nach dem Checkout — vor `npm ci`.
 Ein übersprungener Lauf ist nach wenigen Sekunden vorbei.
 
-Zwei Cron-Zeiten decken den Sommer mit ab (04:23 und 04:53 UTC sind im Winter
+Zwei Cron-Zeiten decken den Sommer mit ab (03:28 und 03:58 UTC sind im Winter
 noch zu früh), der Rest greift ganzjährig. Manuelle Läufe über „Run workflow"
 umgehen Fenster und Tagessperre mit `--force`.
 
