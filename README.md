@@ -142,3 +142,17 @@ umgehen Fenster und Tagessperre mit `--force`.
 Ein Restrisiko bleibt: schlägt der Push von `state.json` fehl, hält der nächste
 Lauf den Tag für offen und schickt das Briefing ein zweites Mal. Doppelt ist mir
 hier lieber als gar nicht.
+
+## Warum das Repo öffentlich ist
+
+Solange es privat war, sind die geplanten Läufe vier bis fünf Stunden zu spät
+gestartet (Cron 04:28 UTC, tatsächlicher Start 08:58 UTC, und so weiter an
+mehreren Tagen). Das Briefing fiel damit regelmäßig aus dem Sendefenster.
+Geplante Läufe in öffentlichen Repos werden bevorzugt eingeplant, deshalb die
+Umstellung am 11.09.2026.
+
+Im Code steht nichts Vertrauliches. Bot-Token und Chat-ID liegen in den
+Actions-Secrets und bleiben auch bei einem öffentlichen Repo verborgen; `.env`
+ist ignoriert und war nie committet. Der Workflow reagiert nur auf `schedule`
+und `workflow_dispatch`, nicht auf `pull_request` — ein fremder Fork kann ihn
+also nicht auslösen und kommt an die Secrets nicht heran.
